@@ -1,0 +1,15 @@
+pre-commit:
+  parallel: true
+  jobs:
+    # TypeScript type checking for payment sdk
+    - name: "TypeScript check (payment sdk)"
+      root: "packages/payments-sdk/"
+      run: bun typecheck
+      fail_text: "TypeScript check failed for payment sdk"
+    # Biome linting and formatting for payment sdk
+    - name: "Biome check (payment sdk)"
+      root: "packages/payments-sdk/"
+      glob: "*.{js,ts,jsx,tsx}"
+      run: bun check {staged_files}
+      stage_fixed: true
+      fail_text: "Biome check failed for payment sdk"
