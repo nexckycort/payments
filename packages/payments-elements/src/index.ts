@@ -10,10 +10,10 @@ customElements.define('card-payment-form', CardPaymentForm);
 customElements.define('pse-payment-form', PSEPaymentForm);
 customElements.define('cash-payment-form', CashPaymentForm);
 
+export type { PaymentSubmitPayload } from '@bloque/payments-core';
 export { BloqueCheckout } from './bloque-checkout';
 export type {
   AppearanceConfig,
   CheckoutConfig,
-  PaymentSubmitPayload,
+  PaymentMethodType,
 } from './types';
-export { PAYMENT_METHODS } from './types';

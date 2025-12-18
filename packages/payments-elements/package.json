@@ -3,19 +3,6 @@
   "version": "0.0.1",
   "description": "Framework-agnostic Web Components for embedding payment checkouts.",
   "type": "module",
-  "main": "./dist/index.js",
-  "module": "./dist/index.js",
-  "types": "./dist/index.d.ts",
-  "exports": {
-    ".": {
-      "types": "./dist/index.d.ts",
-      "import": "./dist/index.js",
-      "default": "./dist/index.js"
-    }
-  },
-  "files": [
-    "dist"
-  ],
   "keywords": [
     "payments",
     "checkout",
@@ -31,6 +18,28 @@
     "provenance": true
   },
   "sideEffects": true,
+  "homepage": "https://github.com/bloque-app/bloque-payments#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bloque-app/bloque-payments",
+    "directory": "packages/payments-elements"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "default": "./dist/index.js"
+    }
+  },
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "node": ">=22"
+  },
   "scripts": {
     "build": "NODE_ENV=production rspack build && tsc --project tsconfig.build.json",
     "build:watch": "NODE_ENV=development rspack build --watch",
@@ -39,13 +48,8 @@
     "typecheck": "tsgo --noEmit",
     "types": "tsc --project tsconfig.build.json"
   },
-  "homepage": "https://github.com/bloque-app/bloque-payments#readme",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/bloque-app/bloque-payments",
-    "directory": "packages/payments-elements"
-  },
   "dependencies": {
+    "@bloque/payments-core": "workspace:*",
     "lit": "^3.3.1"
   },
   "devDependencies": {

@@ -1,3 +1,4 @@
+import type { PaymentSubmitPayload } from '@bloque/payments-core';
 import { css, html, LitElement } from 'lit';
 import { property, state } from 'lit/decorators.js';
 import './card-payment-form';
@@ -8,7 +9,6 @@ import type {
   AppearanceConfig,
   CheckoutConfig,
   PaymentMethodType,
-  PaymentSubmitPayload,
 } from './types';
 
 export class BloqueCheckout extends LitElement {

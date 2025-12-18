@@ -1,12 +1,6 @@
+import type { CashPaymentFormData } from '@bloque/payments-core';
 import { css, html, LitElement } from 'lit';
 import { state } from 'lit/decorators.js';
-
-export interface CashPaymentFormData {
-  email: string;
-  documentType: string;
-  documentNumber: string;
-  fullName: string;
-}
 
 const DOCUMENT_TYPES = [
   { value: 'CC', label: 'Cédula de Ciudadanía' },

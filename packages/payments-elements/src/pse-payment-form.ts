@@ -1,13 +1,6 @@
+import type { PSEPaymentFormData } from '@bloque/payments-core';
 import { css, html, LitElement } from 'lit';
 import { state } from 'lit/decorators.js';
-
-export interface PSEPaymentFormData {
-  personType: 'natural' | 'juridica';
-  documentType: string;
-  documentNumber: string;
-  bankCode: string;
-  email: string;
-}
 
 interface Bank {
   code: string;

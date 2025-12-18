@@ -1,14 +1,6 @@
+import type { CardPaymentFormData } from '@bloque/payments-core';
 import { css, html, LitElement } from 'lit';
 import { property, state } from 'lit/decorators.js';
-
-export interface CardPaymentFormData {
-  cardNumber: string;
-  cardholderName: string;
-  expiryMonth: string;
-  expiryYear: string;
-  cvv: string;
-  email: string;
-}
 
 export class CardPaymentForm extends LitElement {
   @state()

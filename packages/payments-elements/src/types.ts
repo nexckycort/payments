@@ -1,7 +1,3 @@
-import type { CardPaymentFormData } from './card-payment-form';
-import type { CashPaymentFormData } from './cash-payment-form';
-import type { PSEPaymentFormData } from './pse-payment-form';
-
 export type PaymentMethodType = 'card' | 'pse' | 'cash';
 
 export interface PaymentMethod {
@@ -40,21 +36,3 @@ export interface AppearanceConfig {
   borderRadius?: string;
   fontFamily?: string;
 }
-
-export type PaymentFormData =
-  | CardPaymentFormData
-  | PSEPaymentFormData
-  | CashPaymentFormData;
-
-type PaymentFormDataMap = {
-  card: CardPaymentFormData;
-  pse: PSEPaymentFormData;
-  cash: CashPaymentFormData;
-};
-
-export type PaymentSubmitPayload = {
-  [K in keyof PaymentFormDataMap]: {
-    type: K;
-    data: PaymentFormDataMap[K];
-  };
-}[keyof PaymentFormDataMap];
