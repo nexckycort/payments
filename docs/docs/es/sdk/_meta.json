@@ -1,0 +1,27 @@
+[
+  {
+    "type": "file",
+    "name": "index",
+    "label": "Descripción General"
+  },
+  {
+    "type": "file",
+    "name": "checkout",
+    "label": "Recurso Checkout"
+  },
+  {
+    "type": "file",
+    "name": "payments",
+    "label": "Recurso Payment"
+  },
+  {
+    "type": "file",
+    "name": "error-handling",
+    "label": "Manejo de Errores"
+  },
+  {
+    "type": "file",
+    "name": "api-reference",
+    "label": "Referencia de API"
+  }
+]

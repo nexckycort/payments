@@ -1,0 +1,22 @@
+[
+  {
+    "text": "Guía",
+    "link": "/guide/getting-started",
+    "activeMatch": "/guide/"
+  },
+  {
+    "text": "SDK (Node.js)",
+    "link": "/sdk/",
+    "activeMatch": "/sdk/"
+  },
+  {
+    "text": "React",
+    "link": "/react/",
+    "activeMatch": "/react/"
+  },
+  {
+    "text": "Ejemplos",
+    "link": "/examples/",
+    "activeMatch": "/examples/"
+  }
+]

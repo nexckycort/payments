@@ -1,0 +1,17 @@
+[
+  {
+    "type": "file",
+    "name": "index",
+    "label": "Descripción General"
+  },
+  {
+    "type": "file",
+    "name": "bloque-checkout",
+    "label": "Componente BloqueCheckout"
+  },
+  {
+    "type": "file",
+    "name": "customization",
+    "label": "Personalización"
+  }
+]
