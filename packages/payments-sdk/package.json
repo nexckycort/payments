@@ -39,8 +39,8 @@
     "directory": "packages/payments-sdk"
   },
   "devDependencies": {
-    "@rslib/core": "^0.18.4",
-    "@types/node": "^24.10.1",
+    "@rslib/core": "catalog:",
+    "@types/node": "catalog:",
     "@typescript/native-preview": "catalog:",
     "typescript": "catalog:"
   }

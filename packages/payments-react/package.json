@@ -45,11 +45,11 @@
   },
   "devDependencies": {
     "@rsbuild/plugin-react": "^1.4.2",
-    "@rslib/core": "^0.18.4",
+    "@rslib/core": "catalog:",
     "@types/react": "^19.2.7",
     "@typescript/native-preview": "catalog:",
     "react": "^19.2.1",
-    "typescript": "^5.9.3"
+    "typescript": "catalog:"
   },
   "peerDependencies": {
     "react": ">=16.9.0",
