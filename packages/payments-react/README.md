@@ -31,7 +31,7 @@ yarn add @bloque/payments-react
 
 1. **React Component** captures payment data from user
 2. **`onSubmit`** sends complete `PaymentSubmitPayload` to your backend
-3. **Your Backend** uses `@bloque/payments-sdk` to process the payment
+3. **Your Backend** uses `@bloque/payments` to process the payment
 
 ### Basic Example
 
@@ -63,10 +63,10 @@ function App() {
 }
 ```
 
-**Your Backend (using `@bloque/payments-sdk`):**
+**Your Backend (using `@bloque/payments`):**
 
 ```typescript
-import { Bloque } from '@bloque/payments-sdk';
+import { Bloque } from '@bloque/payments';
 
 const bloque = new Bloque({
   apiKey: process.env.BLOQUE_API_KEY!,
@@ -244,7 +244,7 @@ const handleSubmit = async (payload: PaymentSubmitPayload) => {
 
 ### `onSubmit`
 
-Called when the user submits a payment form. Send the complete payload to your backend, which will use `@bloque/payments-sdk` to process the payment.
+Called when the user submits a payment form. Send the complete payload to your backend, which will use `@bloque/payments` to process the payment.
 
 ```typescript
 onSubmit?: (payload: PaymentSubmitPayload) => Promise<void>;
@@ -274,7 +274,7 @@ type PaymentSubmitPayload =
 
 **Your backend should:**
 ```typescript
-import { Bloque } from '@bloque/payments-sdk';
+import { Bloque } from '@bloque/payments';
 
 const bloque = new Bloque({
   apiKey: process.env.BLOQUE_API_KEY!,

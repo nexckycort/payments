@@ -13,13 +13,13 @@ The official TypeScript/JavaScript SDK for integrating [Bloque](https://www.bloq
 ## Installation
 
 ```bash
-bun add @bloque/payments-sdk
+bun add @bloque/payments
 ```
 
 ## Quick Start
 
 ```typescript
-import { Bloque, type PaymentSubmitPayload } from '@bloque/payments-sdk';
+import { Bloque, type PaymentSubmitPayload } from '@bloque/payments';
 
 // Initialize the SDK (server-side only)
 const bloque = new Bloque({
@@ -48,7 +48,7 @@ app.post('/api/payments', async (req, res) => {
 ### Initialize the SDK
 
 ```typescript
-import { Bloque } from '@bloque/payments-sdk';
+import { Bloque } from '@bloque/payments';
 
 const bloque = new Bloque({
   apiKey: 'your-api-key-here',    // Required: Your Bloque API key
@@ -219,7 +219,7 @@ const checkout = await bloque.checkout.cancel('checkout_id_here');
 ### Processing Payments
 
 ```typescript
-import { Bloque, type PaymentSubmitPayload } from '@bloque/payments-sdk';
+import { Bloque, type PaymentSubmitPayload } from '@bloque/payments';
 
 // Initialize SDK with your API key
 const bloque = new Bloque({
@@ -444,7 +444,7 @@ import type {
   CheckoutStatus,
   CheckoutItem,
   CheckoutParams,
-} from '@bloque/payments-sdk';
+} from '@bloque/payments';
 
 const item: CheckoutItem = {
   name: 'Product',
