@@ -1,7 +1,7 @@
 {
-  "name": "@bloque/payments-sdk",
+  "name": "@bloque/payments",
   "version": "0.0.1",
-  "description": "Official Bloque SDK for creating and managing payments, checkouts, and transactions.",
+  "description": "Official Bloque SDK for creating and managing payments and checkouts.",
   "type": "module",
   "keywords": [
     "bloque",
@@ -19,7 +19,7 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/bloque-app/bloque-payments.git",
-    "directory": "packages/payments-sdk"
+    "directory": "packages/payments"
   },
   "exports": {
     ".": {
